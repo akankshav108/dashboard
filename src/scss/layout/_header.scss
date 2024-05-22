@@ -1,0 +1,36 @@
+.header {
+    height: $height-header;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 800;
+    border-bottom: 1px solid $gray-200;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    @include transition(all 0.25s);
+
+    box-shadow: 0 1px 1px rgba($gray-900, 0.01),
+        0 4px 4px rgba($gray-900, 0.01),
+        0 16px 16px rgba($gray-900, 0.01);
+
+    @include media-breakpoint-up(lg) {
+        left: $sidebar-width - 10px;
+        border-left: 1px solid $gray-100;
+    }
+
+    @include media-breakpoint-up(xxl) {
+        left: $sidebar-width;
+    }
+}
+
+.toggle-sidebar-btn {
+
+    cursor: pointer;
+    font-size: 27px;
+    margin: 0 20px;
+    color: $gray-500;
+}

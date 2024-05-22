@@ -1,0 +1,28 @@
+.main {
+    margin-top: $height-header;
+    @include transition(all 0.25s);
+  
+    @include media-breakpoint-up(lg) {
+      margin-left: $sidebar-width - 10px;
+      margin-top: $height-header;
+    }
+  
+    @include media-breakpoint-up(xxl) { margin-left: $sidebar-width; }
+  }
+
+  .main-title{
+    color: $gray-700;
+  }
+
+  .btn{
+    border: 0;
+    padding: 10px 20px 10px 20px;
+    background-color: rgb(4, 1, 93);
+    border-radius: 1;
+    font-size: 14px;
+    @include shadow-sharp($gray-500);
+  }
+
+  .btn:hover, .btn:active{
+    background-color: $btn-hover;
+  }

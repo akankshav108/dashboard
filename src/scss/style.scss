@@ -1,0 +1,38 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600&display=swap');
+
+
+// Bootstrap Framework
+@import "bootstrap/scss/bootstrap";
+
+//Variables and mixins
+@import "variable";
+@import "mixin";
+
+//utils
+@import "utils";
+
+//Layout
+@import "./layout/sidebar";
+@import "./layout/header";
+@import "./layout/main";
+
+//components
+@import "./components/card";
+
+//Animation
+@import "./Animation/transition";
+
+
+body{
+    box-sizing: border-box;
+    padding: 0;
+    background: rgb(247, 249, 254);
+    margin: 0 !important;
+    display: block !important;
+    place-items: unset !important;
+    font-family: $ff-numerals !important;
+}
